@@ -12,8 +12,6 @@ export const List: React.FC = () => {
         const count = breeds.filter((breed) => breed === name).length;
         const likeCount = likes.filter((breed) => breed === name).length;
 
-        console.log(name, count, likeCount);
-
         return (
           <div style={styles.listContainer}>
             <strong style={styles.nameStyle}>{name}</strong>
