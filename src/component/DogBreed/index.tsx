@@ -17,8 +17,6 @@ export const DogBreed: React.FC = () => {
 
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
 
-  console.log("isTablet", isTablet);
-
   useEffect(() => {
     if (data !== undefined) {
       dispatch(resetBreeds());
